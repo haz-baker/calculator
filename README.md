@@ -5,7 +5,7 @@
  
  This is a simplisitic calculator which will perfom 2 number operations such as <b> 66*9 </b> .
  
- <h1> what do i need tyo run this? </h1>
+ <h1> what do i need to run this? </h1>
  
  All you need for this is base python along with the PyQt5 libary which can simply be downloaded through your regular pip commands.
  
