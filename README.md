@@ -1,4 +1,4 @@
-<h1 align="center"> Calculator </h1>
+<h1 align="center"> Simple Calculator </h1>
  
 
 <h1> What does this actually do? </h1>
