@@ -3,7 +3,7 @@
 
 <h1> What does this actually do? </h1>
  
- This is a simplisitic calculator which will perfom 2 number operations such as <b> 66*9 </b>. 
+ This is a simplisitic calculator which will perfom 2 number operations such as <b> 66*9 </b> .
  
  <h1> what do i need tyo run this? </h1>
  
