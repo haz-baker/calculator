@@ -21,7 +21,7 @@ class Ui_Dialog(object):
 
 
     def setupUi(self, Dialog):
-        Dialog.setObjectName("Calculator")
+        Dialog.setObjectName("Dialog")
         Dialog.resize(216, 215)
         Dialog.setStyleSheet("background-color: rgb(53, 53, 53);\n"
 "color: rgb(255, 255, 255);")
@@ -170,7 +170,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Calculator"))
         self.Button_7.setText(_translate("Dialog", "7"))
         self.Button_8.setText(_translate("Dialog", "8"))
         self.Button_9.setText(_translate("Dialog", "9"))
