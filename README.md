@@ -9,7 +9,7 @@
  
  All you need for this is base python along with the PyQt5 libary which can simply be downloaded through your regular pip commands.
  
- <h1> How have I made this? </g1>
+ <h1> How have I made this? </h1>
  
  Good question! So this is simply created using the PyQt5 Designer to build the GUI and labal all the componants before then implimenting the functions which all for the calculator to actually be aple to perfrom the calculations you wish to perform.
  
