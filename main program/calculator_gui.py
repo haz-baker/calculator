@@ -21,7 +21,7 @@ class Ui_Dialog(object):
 
 
     def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
+        Dialog.setObjectName("Calculator")
         Dialog.resize(216, 215)
         Dialog.setStyleSheet("background-color: rgb(53, 53, 53);\n"
 "color: rgb(255, 255, 255);")
