@@ -206,26 +206,6 @@ class Ui_Dialog(object):
 
         elif self.op != 0:
             self.num2 = numbers2(self.op, "0", self.num2)  # calls function to add to num2
-            if self.op > 2:
-                if operator == "*":
-                    answer = times(self.num1, self.num2)
-
-
-                elif operator == "/":
-                    answer = divide(self.num1, self.num2)
-
-
-                elif operator == "+":
-                    answer = add(self.num1, self.num2)
-
-
-                elif operator == "-":
-                    answer = sub(self.num1, self.num2)
-                answer = num1
-                num2 = 0
-
-            if self.op < 2:
-                pass
             self.display.setText(self.num2) # sets display to numbers currently being added
 
     def press_1 (self): # connecting function for button 1
