@@ -13,12 +13,11 @@ from calc_functions import *
 class Ui_Dialog(object):
 
     #defining variables
-    op = None
+    op = 0
     operator = ""
     num1 = ""
     num2 = ""
     numb = []
-
 
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
@@ -192,123 +191,181 @@ class Ui_Dialog(object):
 
     def clear(self): # clear command for the calculator display
         self.display.setText("0") # sets display to 0
+        if self.op == None:
+            self.num1 = ""
+        if self.op != None:
+            self.num2 = ""
+
+
 
     def press_0 (self): # connecting function for button 0
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "0", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.numb2 = numbers2(self.op, "0",self.num2) # calls function to add to num2
+        elif self.op != 0:
+            self.num2 = numbers2(self.op, "0", self.num2)  # calls function to add to num2
+            if self.op > 2:
+                if operator == "*":
+                    answer = times(self.num1, self.num2)
+
+
+                elif operator == "/":
+                    answer = divide(self.num1, self.num2)
+
+
+                elif operator == "+":
+                    answer = add(self.num1, self.num2)
+
+
+                elif operator == "-":
+                    answer = sub(self.num1, self.num2)
+                answer = num1
+                num2 = 0
+
+            if self.op < 2:
+                pass
             self.display.setText(self.num2) # sets display to numbers currently being added
 
     def press_1 (self): # connecting function for button 1
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "1", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers2(self.op, "1", self.num2) # calls function to add to num2
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "1", self.num2)  # calls function to add to num2
             self.display.setText(self.num2) # sets display to numbers currently being added
 
     def press_2 (self):  # connecting function for button 2
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "2", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers2(self.op, "2", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "2", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_3 (self):  # connecting function for button 3
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "3", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers2(self.op, "3", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "3", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_4 (self):  # connecting function for button 4
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "4", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "4", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "4", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_5 (self):  # connecting function for button 5
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "5", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "5",self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "5", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_6 (self):  # connecting function for button 6
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "6", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "6", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "6", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_7 (self):  # connecting function for button 7
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "7", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "7", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "7", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_8 (self):  # connecting function for button 8
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "8", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "8", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "8", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
     def press_9 (self):  # connecting function for button 9
         # if statements to know if to add input to num1 or num2 variable
-        if self.op == None:
+        if self.op == 0:
             self.num1 = numbers1(self.op, "9", self.num1) # calls function to add to num1
             self.display.setText(self.num1) # sets display to numbers currently being added
 
-        elif self.op!= None:
-            self.num2 = numbers1(self.op, "9", self.num2) # calls function to add to num2
-            self.display.setText(self.num2) # sets display to numbers currently being added
+        elif self.op!= 0:
+            self.num2 = numbers2(self.op, "9", self.num2)  # calls function to add to num2
+            self.display.setText(self.num2)  # sets display to numbers currently being added
 
 
     def plus (self): # additon function
+        if self.op >= 1:
+            answer = add(self.num1, self.num2)
+
+            self.num1 = answer
+            self.num2 = ""
+            self.operator = None
+            self.op = 0
+
         self.operator = "+" # setting operator function to '+'
-        self.op = 1 # setting op check variable to true
+        self.op += 1 # setting op check variable to true
 
     def minus (self): # subtraction function
+        if self.op >= 1:
+            answer = sub(self.num1, self.num2)
+
+            self.num1 = answer
+            self.num2 = ""
+            self.operator = None
+            self.op = 0
+
         self.operator = "-" # setting operator function to '-'
-        self.op = 1 # setting op check variable to true
+        self.op += 1 # setting op check variable to true
 
     def times (self): # multiplication function
+        if self.op >= 1:
+            answer = times(self.num1, self.num2)
+
+            self.num1 = answer
+            self.num2 = ""
+            self.operator = None
+            self.op = 0
+
         self.operator = "*" # setting operator function to '*'
-        self.op = 1 # setting op check variable to true
+        self.op += 1 # setting op check variable to true
 
     def divide (self): # division function
+        if self.op >= 1:
+            answer = divide(self.num1, self.num2)
+
+            self.num1 = answer
+            self.num2 = ""
+            self.operator = None
+            self.op = 0
+
         self.operator = "/" # setting operator function to '/'
-        self.op = 1 # setting op check variable to true
+        self.op += 1 # setting op check variable to true
 
     def sum (self):
         if self.operator == "*":
@@ -329,9 +386,10 @@ class Ui_Dialog(object):
 
         self.display.setText(str(self.answer))
         self.operator = None
-        self.op = None
+        self.op = 0
         self.num1 = ""
         self.num2 = ""
+
 
 
 if __name__ == "__main__":
@@ -342,3 +400,4 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
+
