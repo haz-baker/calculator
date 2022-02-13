@@ -25,4 +25,4 @@ This is simple set of commands which you can all feel free to use in order to so
 
 <h1> I've got a probelm?!? 😱 </h1>
 
-If you find any bugs or problems please feel free to create an issue (like this ... https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue ) andf iIwill respond as fast as I can!😊 
+If you find any bugs or problems please feel free to create an issue (like this ... https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue ) and i will respond as fast as I can!😊 
